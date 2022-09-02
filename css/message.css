@@ -1,0 +1,13 @@
+@import "./message-chat.css";
+@import "./date.css";
+
+
+.message {
+    flex-grow: 1;
+    background: url(../img/bg.png);
+    background-color: #0B141A;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}

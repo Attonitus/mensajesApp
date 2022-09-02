@@ -1,0 +1,80 @@
+.message-chat {
+    background: white;
+    font: var(--interNormal);
+    color: var(--messageTitle);
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    position: relative;
+}
+
+.message-text {
+    margin: 0;
+    margin: .5rem;
+
+}
+
+.message-chat.is-receiver {
+    background: var(--messageHover);
+    align-self: flex-start;
+    border-radius: 0 .5rem .5rem .5rem;
+
+}
+
+
+.message-chat.is-receiver::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 100%;
+
+    inline-size: 12px;
+    block-size: 12px;
+    box-sizing: border-box;
+    border-inline-start: 6px solid transparent;
+    border-inline-end: 6px solid var(--messageHover);
+    border-block-start: 6px solid var(--messageHover);
+    border-block-end: 6px solid transparent;
+}
+
+.message-chat.is-sender {
+    background: var(--messageYou);
+    align-self: flex-end;
+    border-radius: .5rem 0rem .5rem .5rem;
+}
+
+.message-chat.is-sender::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 100%;
+
+    inline-size: 12px;
+    block-size: 12px;
+    box-sizing: border-box;
+    border-inline-start: 6px solid var(--messageYou);
+    border-inline-end: 6px solid transparent;
+    border-block-start: 6px solid var(--messageYou);
+    border-block-end: 6px solid transparent;
+}
+
+.message-date {
+    font: var(--interSmall);
+    color: var(--messageMessage);
+    
+}
+
+.message-status.is-doubleCheck{
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+    background-image: url(../img/doublecheckblue.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.message-details {
+    display: flex;
+    justify-content: flex-end;
+    gap: .25rem;
+}

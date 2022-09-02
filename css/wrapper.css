@@ -1,0 +1,26 @@
+:root {
+    --asideInlineSize: 27.5rem;
+    --minBlockSize: 37.5rem;
+    --minInlineSize: 48rem;
+}
+
+.wrapper {
+    min-inline-size: var(--minInlineSize);
+}
+
+.wrapper-sidebar {
+    inline-size: var(--asideInlineSize);
+    flex-shrink: 0;
+    overflow-y: auto;
+}
+
+.wrapper-main {
+    flex: 1;
+    overflow-y: none;
+
+}
+
+.wrapper-block {
+    display: flex;
+
+}

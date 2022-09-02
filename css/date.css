@@ -1,0 +1,9 @@
+.date {
+
+    background-color: #182229;
+    border-radius: .5rem;
+    padding: .625rem;
+    font: var(--interNormal);
+    color: var(--messageMessage);
+    align-self: center;
+}

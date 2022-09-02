@@ -1,0 +1,25 @@
+.action {
+    block-size: var(--actionSize);
+    background: var(--headerColor);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+}
+
+
+.action-middle {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.action input {
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    border-radius: 3rem;
+    font: var(--interNormal);
+    
+}

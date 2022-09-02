@@ -1,0 +1,19 @@
+.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user p span {
+    display: block;
+}
+
+.user-name {
+    color: var(--messageTitle);
+    font: var(--interBold);
+}
+
+.user-status {
+    color: var(--messageMessage);
+    font: var(--interSmall);
+}

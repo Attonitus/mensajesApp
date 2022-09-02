@@ -1,0 +1,30 @@
+@import "./header.css";
+@import "./action.css";
+@import "./chat.css";
+@import "./message.css";
+@import "./user.css";
+@import "./button.css";
+@import "./aside.css";
+@import "./wrapper.css";
+
+:root {
+    --headerSize: 5rem;
+    --actionSize: 4rem;
+    --inter: 'Inter', sans-serif;
+    --interBold: bold 1rem/1.25rem var(--inter);
+    --interNormal: 1rem/1.25rem var(--inter);
+    --interSmall: 0.8125rem/1rem var(--inter);
+    --messageTitle: #E9EDEF;
+    --messageMessage: #8696A0;
+    --messageBase: #111B21;
+    --messageHover: #202C33;
+    --messageClick: #2A3942;
+    --headerColor: #202C33;
+    --messageYou: #005C4B;
+
+}
+
+.body {
+    margin: 0;
+    font: var(--interNormal);
+}

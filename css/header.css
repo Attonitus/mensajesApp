@@ -1,0 +1,13 @@
+.header {
+    block-size: var(--headerSize);
+    background: var(--headerColor);
+    padding-block: .25rem;
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-secondary {
+    display: flex;
+    gap: .5em;
+}
